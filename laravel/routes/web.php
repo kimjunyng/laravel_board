@@ -14,9 +14,6 @@ use App\Http\Controllers\BoardController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('main'); // 'welcome'
-// });
 
 Route::get('/', [BoardController::class, 'index']);
 Route::get('/read', [BoardController::class, 'show']);
